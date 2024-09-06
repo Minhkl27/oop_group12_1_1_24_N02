@@ -1,4 +1,4 @@
-package Midterm;
+package MidtermEX1;
 
 // Cài đặt một lớp cụ thể cài đặt interface Signal
 public class DiscreteSignal implements Signal {

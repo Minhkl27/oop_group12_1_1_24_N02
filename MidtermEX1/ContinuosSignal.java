@@ -1,4 +1,4 @@
-package Midterm;
+package MidtermEX1;
 
 public class ContinuosSignal implements Signal {
     private double amplitude;

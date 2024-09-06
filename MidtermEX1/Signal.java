@@ -1,6 +1,5 @@
 
-
-package Midterm;
+package MidtermEX1;
 
 interface Signal {
     // Getter và setter cho biên độ

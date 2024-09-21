@@ -1,7 +1,8 @@
 # oop_group12_1_1_24_N02
 
 # 1.Sơ đồ cấu trúc
-![image](https://github.com/user-attachments/assets/c2503dfc-809e-444b-a007-6118da38262c)
+![image](https://github.com/user-attachments/assets/c2caa0b6-ee58-4929-982b-ba22c675baa5)
+
 
 # 2.Lưu đồ thuật toán
 

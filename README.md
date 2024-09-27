@@ -7,13 +7,13 @@ oop_group12_1_1_24_N02
   - Vũ Ngọc Hiểu
   - Lê Thị Vóc 
 ## Chức năng chính
-  *Thêm,sửa,xóa thông tin sinh viên\\
-  *Nhập điểm cho sinh viên\\
-  *Hiển thị danh sách sinh viên,thông tin\\
-  *Thêm môn học\\
-  *Hiển thị danh sách môn học\\
-  *Đăng ký học phần cho sinh viên\\
-  *Hủy môn học đã đăng ký\\
+  - Thêm,sửa,xóa thông tin sinh viên
+  - Nhập điểm cho sinh viên
+  - Hiển thị danh sách sinh viên,thông tin
+  - Thêm môn học
+  - Hiển thị danh sách môn học
+  - Đăng ký học phần cho sinh viên
+  - Hủy môn học đã đăng ký
  ## UML dự án
  ## 1.Sơ đồ cấu trúc 
 ![image](https://github.com/user-attachments/assets/37e359e3-c9dd-4605-a80b-f9e1aa252637)

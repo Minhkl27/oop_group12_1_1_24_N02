@@ -1,5 +1,7 @@
 oop_group12_1_1_24_N02
 # Hệ thống quản lý và đăng ký học phần cho sinh viên
+## Giới thiệu dự án
+  Hệ thống này giúp trường đại học,cao đẳng có thể quản lý danh sách sinh viên và tạo ra hệ thống đăng ký học phần cho sinh viên,bên cạnh đó sinh viên có thể đăng nhập để dăng ký học phần     online.  
 # 1.Sơ đồ cấu trúc
 ![image](https://github.com/user-attachments/assets/37e359e3-c9dd-4605-a80b-f9e1aa252637)
 

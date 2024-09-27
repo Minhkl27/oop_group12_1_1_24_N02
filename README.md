@@ -3,7 +3,7 @@ oop_group12_1_1_24_N02
 ## Giới thiệu dự án
   Hệ thống này giúp trường đại học,cao đẳng có thể quản lý danh sách sinh viên và tạo ra hệ thống đăng ký học phần cho sinh viên,bên cạnh đó sinh viên có thể đăng nhập để dăng ký học phần     online.  
 ## Thành viên nhóm
-  *Nguyễn Văn Minh\\
+  *Nguyễn Văn Minh\/n
   *Vũ Ngọc Hiểu\\
   *Lê Thị Vóc\\ 
 ## Chức năng chính

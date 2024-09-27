@@ -3,17 +3,17 @@ oop_group12_1_1_24_N02
 ## Giới thiệu dự án
   Hệ thống này giúp trường đại học,cao đẳng có thể quản lý danh sách sinh viên và tạo ra hệ thống đăng ký học phần cho sinh viên,bên cạnh đó sinh viên có thể đăng nhập để dăng ký học phần     online.  
 ## Thành viên nhóm
-  *Nguyễn Văn Minh \n
-  *Vũ Ngọc Hiểu
-  *Lê Thị Vóc 
+  *Nguyễn Văn Minh\\
+  *Vũ Ngọc Hiểu\\
+  *Lê Thị Vóc\\ 
 ## Chức năng chính
-  *Thêm,sửa,xóa thông tin sinh viên
-  *Nhập điểm cho sinh viên
-  *Hiển thị danh sách sinh viên,thông tin
-  *Thêm môn học
-  *Hiển thị danh sách môn học
-  *Đăng ký học phần cho sinh viên
-  *Hủy môn học đã đăng ký
+  *Thêm,sửa,xóa thông tin sinh viên\\
+  *Nhập điểm cho sinh viên\\
+  *Hiển thị danh sách sinh viên,thông tin\\
+  *Thêm môn học\\
+  *Hiển thị danh sách môn học\\
+  *Đăng ký học phần cho sinh viên\\
+  *Hủy môn học đã đăng ký\\
  ## UML dự án
  ## 1.Sơ đồ cấu trúc 
 ![image](https://github.com/user-attachments/assets/37e359e3-c9dd-4605-a80b-f9e1aa252637)
@@ -56,5 +56,5 @@ oop_group12_1_1_24_N02
 
 ![image](https://github.com/user-attachments/assets/e554e884-4ef5-41fd-99d2-1c0e3109e7d3)
 
-##GitHub page của dự án
+## GitHub page của dự án
 https://github.com/Minhkl27/oop_group12_1_1_24_N02/tree/finalReport

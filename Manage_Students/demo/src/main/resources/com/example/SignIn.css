@@ -1,0 +1,36 @@
+.formsignin {
+    -fx-background-color: black;
+    background-color: black;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 3);
+    -fx-padding: 20;
+    padding: 20;
+    -fx-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.body {
+    -fx-background-color: rgb(255, 252, 252);
+    background-color: rgb(255, 255, 255);
+}
+
+.textname,
+.password {
+    -fx-pref-width: 200px;
+    -fx-padding: 10px;
+    padding: 10px;
+    -fx-border-color: transparent;
+    border-color: transparent;
+    -fx-background-radius: 5;
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    padding: 10px 20px;
+    -fx-background-radius: 5;
+}

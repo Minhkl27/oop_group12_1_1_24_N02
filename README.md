@@ -54,7 +54,8 @@ oop_group12_1_1_24_N02
 
 ## Giao diện đầu tiên của dự án
 
-![image](https://github.com/user-attachments/assets/e554e884-4ef5-41fd-99d2-1c0e3109e7d3)
+![image](https://github.com/user-attachments/assets/1ec1fc5a-3b87-469f-a480-ea72cbdd8b0e)
+
 
 ## GitHub page của dự án
 https://github.com/Minhkl27/oop_group12_1_1_24_N02/tree/finalReport

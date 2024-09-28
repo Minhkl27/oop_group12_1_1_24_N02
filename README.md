@@ -54,7 +54,7 @@ oop_group12_1_1_24_N02
 
 ## Giao diện đầu tiên của dự án
 
-![image](https://github.com/user-attachments/assets/1ec1fc5a-3b87-469f-a480-ea72cbdd8b0e)
+![image](https://github.com/user-attachments/assets/bba78eb7-7d74-40a7-807c-3fe329ed0153)
 
 
 ## GitHub page của dự án

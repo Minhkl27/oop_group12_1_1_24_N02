@@ -1,4 +1,4 @@
-package com.example;
+package com.example.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
@@ -15,6 +15,11 @@ public class Homepage {
     Label name;
 
     public void displayname(String username) {
-        name.setText(username);
+        try {
+            name.setText(username);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }

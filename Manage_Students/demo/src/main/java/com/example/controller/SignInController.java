@@ -1,4 +1,4 @@
-package com.example;
+package com.example.controller;
 
 import java.io.IOException;
 
@@ -58,7 +58,7 @@ public class SignInController {
             if (handleLogin()) {
                 String username = nameTextField.getText();
 
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("Homepage.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/Homepage.fxml"));
                 root = loader.load();
 
                 Homepage homepage = loader.getController();

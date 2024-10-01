@@ -23,8 +23,8 @@ public class SignInController {
     @FXML
     TextField password;
 
-    private final String ACCOUNTadmin = "MinhNguyen";
-    private final String PASSWORDadmin = "minh12345";
+    private String ACCOUNTadmin = "MinhNguyen";
+    private String PASSWORDadmin = "minh12345";
 
     private String userACCOUNT = "HieuVn";
     private String userPASSWORD = "hieu12345";
@@ -57,29 +57,37 @@ public class SignInController {
         try {
             if (handleLogin()) {
                 String username = nameTextField.getText();
+                if (username.equals(ACCOUNTadmin) && password.getText().equals(PASSWORDadmin)) {
 
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/Homepage.fxml"));
-                root = loader.load();
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/index/HomepageAD.fxml"));
+                    root = loader.load();
+                    Homepage homepage = loader.getController();
+                    homepage.displayname(username);
+                    // root = FXMLLoader.load(getClass().getResource("Homepage.fxml"));
+                    stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.show();
 
-                Homepage homepage = loader.getController();
-                homepage.displayname(username);
-                // root = FXMLLoader.load(getClass().getResource("Homepage.fxml"));
-                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                scene = new Scene(root);
-                stage.setScene(scene);
-                stage.show();
+                } else {
+
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/index/HomepageUser.fxml"));
+                    root = loader.load();
+                    Homepage homepage = loader.getController();
+                    homepage.displayname(username);
+
+                    // root = FXMLLoader.load(getClass().getResource("Homepage.fxml"));
+                    stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.show();
+
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
         // finally {
-        // String username = nameTextField.getText();
-
-        // FXMLLoader loader = new FXMLLoader(getClass().getResource("Homepage.fxml"));
-        // root = loader.load();
-
-        // Homepage homepage = loader.getController();
-        // homepage.displayname(username);
         // // root = FXMLLoader.load(getClass().getResource("Homepage.fxml"));
         // stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         // scene = new Scene(root);

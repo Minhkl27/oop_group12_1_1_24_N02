@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" styleClass="body" stylesheets="@../style/hompage.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.Homepage">
+   <children>
+      <BorderPane fx:id="mainpane" prefHeight="700.0" prefWidth="900.0">
+         <left>
+            <VBox alignment="BASELINE_CENTER" prefHeight="534.0" prefWidth="124.0" spacing="40.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnOnClickTrangchu" prefHeight="26.0" prefWidth="100.0" styleClass="menubutton" text="Trang chủ">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#btnOnClickSinhvien" prefHeight="26.0" prefWidth="100.0" styleClass="menubutton" text="Sinh Viên">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#btnOnClickMonhoc" styleClass="menubutton" text="Thêm môn học">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#btnOnClickNhapdiem" prefHeight="26.0" prefWidth="100.0" styleClass="menubutton" text="Nhập điểm">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#Signout" prefWidth="100.0" style="-fx-background-color: red;" styleClass="menubutton" text="Đăng xuất">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin></Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <BorderPane.margin>
+                  <Insets bottom="150.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <bottom>
+            <Pane prefHeight="29.0" prefWidth="900.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <Pane prefHeight="64.0" prefWidth="900.0" styleClass="head" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="name" layoutX="802.0" layoutY="23.0" prefHeight="17.0" prefWidth="98.0" text="MinhNguyen" textAlignment="CENTER" textFill="#4786ec">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="232.0" layoutY="7.0" prefHeight="53.0" prefWidth="437.0" text="STUDENT MANAGEMENT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="759.0" layoutY="12.0" prefHeight="39.0" prefWidth="36.0" styleClass="avatar" stylesheets="@../style/hompage.css" textFill="WHITE" />
+                  <Label layoutX="40.0" layoutY="3.0" prefHeight="58.0" prefWidth="62.0" styleClass="logo" stylesheets="@../style/hompage.css" />
+               </children>
+            </Pane>
+         </top>
+         <right>
+            <Pane prefHeight="606.0" prefWidth="38.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

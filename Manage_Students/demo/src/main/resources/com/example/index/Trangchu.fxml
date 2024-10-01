@@ -2,15 +2,63 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="170.0" layoutY="165.0" text="Home Page" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="48.0" />
-         </font>
-      </Label>
+      <Pane layoutX="31.0" layoutY="42.0" prefHeight="267.0" prefWidth="673.0" style="-fx-background-radius: 50px;" styleClass="trang_chu">
+         <children>
+            <Label layoutX="147.0" layoutY="70.0" text="“KNOWLEDGE IS LIKE A GARDEN;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="105.0" text="IF IT IS NOT CULTIVATED, IT CANNOT BE HARVESTED”" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="295.0" layoutY="164.0" text="African Proverb" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="31.0" layoutY="356.0" prefHeight="200.0" prefWidth="302.0" style="-fx-background-radius: 30px;" styleClass="trang_chu">
+         <children>
+            <Label layoutX="89.0" layoutY="14.0" text="Notification" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="73.0" text="Students attention" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="131.0" text="Change Class" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="388.0" layoutY="356.0" prefHeight="200.0" prefWidth="313.0" style="-fx-background-radius: 30px;" styleClass="trang_chu">
+         <children>
+            <Label layoutX="130.0" layoutY="14.0" text="Class" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="70.0" text="K16_CNTT4" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="117.0" text="K16_KHMT1" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

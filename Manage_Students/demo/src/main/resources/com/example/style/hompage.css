@@ -13,8 +13,8 @@
 }
 
 .head {
-    -fx-background-color: rgba(88, 86, 86, 0.182);
-    background-color: rgba(88, 86, 86, 0.192);
+    -fx-background-color: white;
+    background-color: white;
     -fx-background-radius: 10;
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 3);
     -fx-padding: 20;
@@ -41,4 +41,9 @@
     -fx-background-color: rgb(79, 79, 239);
     background-color: rgb(79, 79, 239);
     -fx-text-fill: white;
+}
+
+.trang_chu {
+    -fx-background-color: rgba(88, 86, 86, 0.46);
+    background-color: rgba(88, 86, 86, 0.46);
 }

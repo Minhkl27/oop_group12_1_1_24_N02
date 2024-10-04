@@ -134,12 +134,12 @@
                               <Font size="24.0" />
                            </font>
                         </Label>
-                        <Label layoutX="56.0" layoutY="70.0" text="K16_CNTT4" textFill="WHITE">
+                        <Label layoutX="56.0" layoutY="70.0" text="CSE703209-1-1-24(N02)" textFill="WHITE">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="56.0" layoutY="117.0" text="K16_KHMT1" textFill="WHITE">
+                        <Label layoutX="56.0" layoutY="117.0" text="CSE703004-1-1-24(N01)" textFill="WHITE">
                            <font>
                               <Font size="20.0" />
                            </font>

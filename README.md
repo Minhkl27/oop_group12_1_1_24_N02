@@ -56,7 +56,7 @@ oop_group12_1_1_24_N02
 
 ![image](https://github.com/user-attachments/assets/783d6a1d-8cb0-4760-a4cc-4159753887eb)
 
-
+![image](https://github.com/user-attachments/assets/9ba1c1e3-613e-43c3-b5ea-b7917eaaac7a)
 
 
 ## GitHub page của dự án

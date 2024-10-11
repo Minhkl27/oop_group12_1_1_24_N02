@@ -1,8 +1,11 @@
-package com.example.entity;
+package com.example.controller;
 
 import javafx.scene.control.Alert;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.example.entity.Account;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -22,7 +25,6 @@ public class AccountManager {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                System.out.println("Read from file: " + line);
                 String[] parts = line.split(" ");
                 if (parts.length == 2) {
                     String username = parts[0];
@@ -30,9 +32,6 @@ public class AccountManager {
                     // System.out.println("UserName: " + username + ", Password: " + password);
                     accounts.add(new Account(username, password));
                 }
-            }
-            for (Account acc : accounts) {
-                System.out.println("UserName: " + acc.getUsername() + ";" + "Password: " + acc.getPassword());
             }
         } catch (IOException e) {
             e.printStackTrace();

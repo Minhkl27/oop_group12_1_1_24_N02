@@ -18,7 +18,7 @@ public class ConnectJDBC {
 
         try {
             conn = DriverManager.getConnection(connectionURL, username, password);
-            System.out.println("Kết nối thành công");
+            System.out.println("Connected");
         } catch (SQLException e) {
             e.printStackTrace();
         }

@@ -10,7 +10,7 @@ public class Main {
                 ArrayList<Registration> registrations = new ArrayList<>();
 
                 // Tạo đối tượng Admin
-                Admin admin = new Admin("coLeThu", "123456a@");
+                Admin admin = new Admin("MinhNguyen", "minh12345");
 
                 // Thêm sinh viên
                 Student student1 = new Student("22010502", "HieuVN", "Vu Ngoc Hieu", "22010502@st.phenikaa-uni.edu.vn",

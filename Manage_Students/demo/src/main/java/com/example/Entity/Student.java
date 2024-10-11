@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Student {
     private String studentID;
-    @SuppressWarnings("unused")
     private String password;
     private String name;
     private String email;
@@ -20,6 +19,10 @@ public class Student {
 
     public String getName() {
         return name;
+    }
+
+    public String getPass() {
+        return password;
     }
 
     public String getEmail() {

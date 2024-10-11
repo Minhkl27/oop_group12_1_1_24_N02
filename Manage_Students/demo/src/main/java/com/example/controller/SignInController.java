@@ -1,8 +1,6 @@
 package com.example.controller;
 
 import java.io.IOException;
-import com.example.entity.AccountManager;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -34,7 +32,6 @@ public class SignInController {
         try {
             String username = nameTextField.getText();
             String password = passwordTextField.getText();
-
             if (username.equals(ACCOUNTadmin) && password.equals(PASSWORDadmin)) {
 
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/index/HomepageAD.fxml"));

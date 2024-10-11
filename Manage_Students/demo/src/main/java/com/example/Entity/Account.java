@@ -1,5 +1,7 @@
 package com.example.entity;
 
+import java.util.ArrayList;
+
 public class Account {
     private String username;
     private String password;
@@ -15,5 +17,8 @@ public class Account {
 
     public String getPassword() {
         return password;
+    }
+
+    public void listAccount(ArrayList<Account> accounts) {
     }
 }

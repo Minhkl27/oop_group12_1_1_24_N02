@@ -28,6 +28,10 @@ public class Homepage {
         }
     }
 
+    public void displayStudent() {
+
+    }
+
     @FXML
     public void Signout(ActionEvent event) throws IOException {
         try {

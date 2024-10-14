@@ -1,15 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="720.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="516.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.SubjectController">
    <children>
-      <Label layoutX="218.0" layoutY="182.0" text="Thêm Môn Học">
+      <TableView fx:id="table" layoutX="24.0" layoutY="73.0" prefHeight="334.0" prefWidth="450.0">
+         <columns>
+            <TableColumn fx:id="subjectIDColumn" prefWidth="150.0" text="Subject ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="167.99998474121094" text="Name" />
+            <TableColumn fx:id="creditsColumn" prefWidth="132.0" text="Credits" />
+         </columns>
+      </TableView>
+
+      <Label layoutX="499.0" layoutY="160.0" text="Subject ID" textFill="WHITE">
          <font>
-            <Font size="24.0" />
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="subjectIDInput" layoutX="564.0" layoutY="156.0" />
+
+      <Label layoutX="499.0" layoutY="203.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="nameInput" layoutX="564.0" layoutY="199.0" />
+
+      <Label layoutX="499.0" layoutY="244.0" text="Credits" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="creditsInput" layoutX="564.0" layoutY="240.0" />
+
+      <Button layoutX="564.0" layoutY="283.0" onAction="#addSubject" text="Add" />
+      <Label layoutX="275.0" layoutY="13.0" prefHeight="35.0" prefWidth="243.0" style="-fx-alignment: center;" text="Add Subject" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
          </font>
       </Label>
+      <Label layoutX="38.0" layoutY="23.0" styleClass="logo" stylesheets="@../style/hompage.css" />
+      <Label layoutX="38.0" layoutY="14.0" prefHeight="35.0" prefWidth="38.0" styleClass="logo" stylesheets="@../style/hompage.css" />
+      <Button layoutX="675.0" layoutY="11.0" mnemonicParsing="false" onAction="#clickback" style="-fx-background-color: blue;" text="Back" />
+      <Button layoutX="656.0" layoutY="283.0" mnemonicParsing="false" onAction="#editSubject" text="Edit" />
    </children>
+   <stylesheets>
+      <URL value="@../style/hompage.css" />
+      <URL value="@../style/SignIn.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="body" />
+      <String fx:value="trang_chu" />
+   </styleClass>
 </AnchorPane>

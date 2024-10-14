@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -26,10 +27,6 @@ public class Homepage {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public void displayStudent() {
-
     }
 
     @FXML
@@ -63,7 +60,7 @@ public class Homepage {
     public void btnOnClickSinhvien(ActionEvent event) throws IOException {
         try {
             Loadmenu object = new Loadmenu();
-            Pane view = object.getPage("Students");
+            Pane view = object.getPage("Student");
             mainpane.setCenter(view);
         } catch (Exception e) {
             e.printStackTrace();

@@ -16,7 +16,7 @@
          <left>
             <VBox alignment="BASELINE_CENTER" prefHeight="534.0" prefWidth="124.0" spacing="40.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" onAction="#btnOnClickTrangchu" prefHeight="26.0" prefWidth="100.0" styleClass="menubutton" text="Trang chủ">
+                  <Button mnemonicParsing="false" onAction="#btnOnClickTrangchu" prefHeight="26.0" prefWidth="100.0" styleClass="menubutton" text="HomePage">
                      <VBox.margin>
                         <Insets top="30.0" />
                      </VBox.margin>
@@ -26,27 +26,29 @@
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" onAction="#btnOnClickSinhvien" prefHeight="26.0" prefWidth="100.0" styleClass="menubutton" text="Sinh Viên">
+                  <Button mnemonicParsing="false" onAction="#btnOnClickSinhvien" prefHeight="26.0" prefWidth="100.0" styleClass="menubutton" text="Student">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" onAction="#btnOnClickMonhoc" styleClass="menubutton" text="Thêm môn học">
+                  <Button mnemonicParsing="false" onAction="#btnOnClickMonhoc" prefHeight="26.0" prefWidth="97.0" styleClass="menubutton" text="Add Subject">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <font>
                         <Font name="System Bold" size="12.0" />
-                     </font></Button>
-                  <Button mnemonicParsing="false" onAction="#btnOnClickNhapdiem" prefHeight="26.0" prefWidth="100.0" styleClass="menubutton" text="Nhập điểm">
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnOnClickNhapdiem" prefHeight="26.0" prefWidth="93.0" styleClass="menubutton" text="Score">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <font>
                         <Font name="System Bold" size="12.0" />
-                     </font></Button>
+                     </font>
+                  </Button>
                   <Button mnemonicParsing="false" onAction="#Signout" prefWidth="100.0" style="-fx-background-color: red;" styleClass="menubutton" text="Đăng xuất">
                      <cursor>
                         <Cursor fx:constant="HAND" />

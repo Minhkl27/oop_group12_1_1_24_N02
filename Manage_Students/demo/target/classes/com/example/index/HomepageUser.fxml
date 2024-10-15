@@ -14,9 +14,9 @@
    <children>
       <BorderPane fx:id="mainpane" prefHeight="700.0" prefWidth="900.0">
          <left>
-            <VBox alignment="BASELINE_CENTER" prefHeight="534.0" prefWidth="124.0" spacing="40.0" BorderPane.alignment="CENTER">
+            <VBox alignment="BASELINE_CENTER" prefHeight="434.0" prefWidth="133.0" spacing="40.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" onAction="#btnOnClickTrangchu" prefHeight="26.0" prefWidth="100.0" styleClass="menubutton" text="Trang chủ">
+                  <Button mnemonicParsing="false" onAction="#btnOnClickTrangchu" prefHeight="26.0" prefWidth="100.0" styleClass="menubutton" text="HomePage">
                      <VBox.margin>
                         <Insets top="30.0" />
                      </VBox.margin>
@@ -27,21 +27,22 @@
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#btnOnClickDangki" prefHeight="26.0" prefWidth="116.0" styleClass="menubutton" text="Đăng kí môn học">
+                  <Button mnemonicParsing="false" onAction="#btnOnClickMyProfile" prefHeight="26.0" prefWidth="102.0" styleClass="menubutton" text="My Profile">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" onAction="#btnOnClickHuymon" prefWidth="109.0" styleClass="menubutton" text="Hủy môn học ">
+                  <Button mnemonicParsing="false" onAction="#btnOnClickDangki" prefHeight="26.0" prefWidth="107.0" styleClass="menubutton" text="Registration">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <font>
                         <Font name="System Bold" size="12.0" />
-                     </font></Button>
-                  <Button fx:id="btnSignout" mnemonicParsing="false" onAction="#Signout" prefWidth="109.0" style="-fx-background-color: red;" styleClass="menubutton" text="Đăng xuất">
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSignout" mnemonicParsing="false" onAction="#Signout" prefWidth="109.0" style="-fx-background-color: red;" styleClass="menubutton" text="Log out">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -61,7 +62,7 @@
             </VBox>
          </left>
          <bottom>
-            <Pane prefHeight="76.0" prefWidth="900.0" BorderPane.alignment="CENTER" />
+            <Pane prefHeight="41.0" prefWidth="916.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
          </bottom>
          <top>
             <Pane prefHeight="64.0" prefWidth="900.0" styleClass="head" stylesheets="@../style/hompage.css" BorderPane.alignment="CENTER">
@@ -71,7 +72,7 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="232.0" layoutY="7.0" prefHeight="53.0" prefWidth="437.0" text="STUDENT MANAGEMENT" textFill="WHITE">
+                  <Label layoutX="256.0" layoutY="7.0" prefHeight="53.0" prefWidth="389.0" text="STUDENT EDUCATION">
                      <font>
                         <Font name="System Bold" size="36.0" />
                      </font>
@@ -84,6 +85,65 @@
          <right>
             <Pane prefHeight="560.0" prefWidth="66.0" BorderPane.alignment="CENTER" />
          </right>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="31.0" layoutY="42.0" prefHeight="267.0" prefWidth="673.0" style="-fx-background-radius: 50px;" styleClass="trang_chu">
+                     <children>
+                        <Label layoutX="147.0" layoutY="70.0" text="“KNOWLEDGE IS LIKE A GARDEN;" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="27.0" layoutY="105.0" text="IF IT IS NOT CULTIVATED, IT CANNOT BE HARVESTED”" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="295.0" layoutY="164.0" text="African Proverb" textFill="WHITE" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="31.0" layoutY="356.0" prefHeight="200.0" prefWidth="302.0" style="-fx-background-radius: 30px;" styleClass="trang_chu">
+                     <children>
+                        <Label layoutX="89.0" layoutY="14.0" text="Notification" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="73.0" text="Students attention" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="131.0" text="Change Class" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="388.0" layoutY="356.0" prefHeight="200.0" prefWidth="313.0" style="-fx-background-radius: 30px;" styleClass="trang_chu">
+                     <children>
+                        <Label layoutX="130.0" layoutY="14.0" text="Class" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="70.0" text="CSE703209-1-1-24(N02)" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="117.0" text="CSE703004-1-1-24(N01)" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </center>
       </BorderPane>
    </children>
 </AnchorPane>

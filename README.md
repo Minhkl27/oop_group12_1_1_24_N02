@@ -56,8 +56,13 @@ oop_group12_1_1_24_N02
 
 ![image](https://github.com/user-attachments/assets/783d6a1d-8cb0-4760-a4cc-4159753887eb)
 
+## Kết nối thành công với CSDL và chèn thêm dữ liệu
 
+![image](https://github.com/user-attachments/assets/215bcfd1-a316-491b-9249-b0610bcbd883)
 
 
 ## GitHub page của dự án
 https://github.com/Minhkl27/oop_group12_1_1_24_N02/tree/finalReport
+
+## Reference
+*Background image is from internet

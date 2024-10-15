@@ -20,17 +20,19 @@ public class Admin {
     }
 
     // Cập nhật sinh viên
-    public void updateStudent(ArrayList<Student> students, String studentID, String newEmail, String newPhone) {
-        for (Student student : students) {
-            if (student.getStudentID().equals(studentID)) {
-                student = new Student(student.getStudentID(), student.getEmail(), student.getName(), newEmail,
-                        newPhone);
-                System.out.println("Student updated: " + student.getName());
-                return;
-            }
-        }
-        System.out.println("Student not found.");
-    }
+    // public void updateStudent(ArrayList<Student> students, String studentID,
+    // String newEmail, String newPhone) {
+    // for (Student student : students) {
+    // if (student.getStudentID().equals(studentID)) {
+    // student = new Student(student.getStudentID(), student.getEmail(),
+    // student.getName(), newEmail,
+    // newPhone);
+    // System.out.println("Student updated: " + student.getName());
+    // return;
+    // }
+    // }
+    // System.out.println("Student not found.");
+    // }
 
     // Xóa sinh viên
     public void removeStudent(ArrayList<Student> students, String studentID) {

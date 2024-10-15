@@ -1,0 +1,5 @@
+.frame {
+    -fx-background-color: rgba(88, 86, 86, 0.46);
+    background-color: rgba(88, 86, 86, 0.46);
+    -fx-background-radius: 30;
+}

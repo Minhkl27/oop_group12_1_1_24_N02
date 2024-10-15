@@ -63,3 +63,6 @@ oop_group12_1_1_24_N02
 
 ## GitHub page của dự án
 https://github.com/Minhkl27/oop_group12_1_1_24_N02/tree/finalReport
+
+## Reference
+*Background image is from internet

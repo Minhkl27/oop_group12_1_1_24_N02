@@ -3,6 +3,7 @@ package com.example.controller;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.example.entity.Score;
@@ -52,6 +53,31 @@ public class ScoreController {
 
         // Thiết lập danh sách cho bảng
         table.setItems(scoreList);
+    }
+
+    private ObservableList<Score> scoreData = FXCollections.observableArrayList();
+
+    public void loadScore(ActionEvent event) {
+
+        String query = "SELECT studentID, subject_id, score FROM scores";
+
+        try (Connection conn = ConnectJDBC.connect();
+                PreparedStatement stmt = conn.prepareStatement(query)) {
+            ResultSet rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                String studentID = rs.getString("studentID");
+                String subjectID = rs.getString("subject_id");
+                float score = rs.getFloat("score");
+
+                scoreData.add(new Score(studentID, subjectID, score));
+            }
+
+            table.setItems(scoreData);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

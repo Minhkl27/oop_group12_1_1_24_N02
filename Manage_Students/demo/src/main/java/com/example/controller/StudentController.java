@@ -3,6 +3,7 @@ package com.example.controller;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.example.entity.Student;
@@ -44,21 +45,40 @@ public class StudentController {
     private TableColumn<Student, String> phoneNumberColumn;
 
     private ObservableList<Student> studentList;
+    private ObservableList<Student> studentData = FXCollections.observableArrayList();
 
     @FXML
     public void initialize() {
-        try {
-            studentList = FXCollections.observableArrayList();
+        studentList = FXCollections.observableArrayList();
 
-            // Thiết lập cột cho bảng
-            studentIDColumn.setCellValueFactory(new PropertyValueFactory<>("studentID"));
-            nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
-            emailColumn.setCellValueFactory(new PropertyValueFactory<>("email"));
-            phoneNumberColumn.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
+        // Thiết lập cột cho bảng
+        studentIDColumn.setCellValueFactory(new PropertyValueFactory<>("studentID"));
+        nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+        emailColumn.setCellValueFactory(new PropertyValueFactory<>("email"));
+        phoneNumberColumn.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
+        // Thiết lập danh sách sinh viên
+        table.setItems(studentList);
 
-            // Thiết lập danh sách sinh viên
-            table.setItems(studentList);
-        } catch (Exception e) {
+    }
+
+    public void loadStudentData(ActionEvent event) {
+        String query = "SELECT * FROM student";
+
+        try (Connection conn = ConnectJDBC.connect();
+                PreparedStatement stmt = conn.prepareStatement(query)) {
+            ResultSet rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                String studentID = rs.getString("studentID");
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                String phoneNumber = rs.getString("phoneNumber");
+                studentData.add(new Student(studentID, name, email, phoneNumber));
+            }
+
+            table.setItems(studentData);
+
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }

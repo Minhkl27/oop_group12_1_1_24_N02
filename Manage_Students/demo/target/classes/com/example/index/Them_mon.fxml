@@ -48,6 +48,7 @@
       <Label layoutX="38.0" layoutY="14.0" prefHeight="35.0" prefWidth="38.0" styleClass="logo" stylesheets="@../style/hompage.css" />
       <Button layoutX="675.0" layoutY="11.0" mnemonicParsing="false" onAction="#clickback" style="-fx-background-color: blue;" text="Back" />
       <Button layoutX="656.0" layoutY="283.0" mnemonicParsing="false" onAction="#editSubject" text="Edit" />
+      <Button layoutX="596.0" layoutY="349.0" mnemonicParsing="false" onAction="#loadSubject" text="Load DB" />
    </children>
    <stylesheets>
       <URL value="@../style/hompage.css" />

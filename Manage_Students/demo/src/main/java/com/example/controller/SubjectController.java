@@ -3,6 +3,7 @@ package com.example.controller;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.example.entity.Subject;
@@ -52,6 +53,29 @@ public class SubjectController {
 
         // Thiết lập danh sách hiển thị trong bảng
         table.setItems(subjectList);
+    }
+
+    private ObservableList<Subject> subjectData = FXCollections.observableArrayList();
+
+    public void loadSubject(ActionEvent event) {
+        String query = "SELECT * FROM subject"; // Giả sử bảng môn học có tên là 'subjects'
+
+        try (Connection conn = ConnectJDBC.connect();
+                PreparedStatement stmt = conn.prepareStatement(query)) {
+            ResultSet rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                String subjectID = rs.getString("subject_id");
+                String name = rs.getString("name");
+                int credits = rs.getInt("credits");
+                subjectData.add(new Subject(subjectID, name, credits));
+            }
+
+            table.setItems(subjectData); // Đặt dữ liệu vào TableView
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

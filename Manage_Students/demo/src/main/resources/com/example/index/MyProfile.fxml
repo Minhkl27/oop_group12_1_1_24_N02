@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="473.0" prefWidth="700.0" styleClass="body" stylesheets="@../style/hompage.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.MyProfileController">
+
+    <!-- Tiêu đề -->
+    <Label layoutX="262.0" layoutY="14.0" text="My Profile" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="36.0" />
+      </font></Label>
+
+    <!-- Thông tin sinh viên -->
+    <Label layoutX="50" layoutY="70" text="Student ID:" textFill="WHITE" />
+    <Label fx:id="studentIDLabel" layoutX="150" layoutY="70" style="-fx-font-weight: bold;" textFill="WHITE" />
+
+    <Label layoutX="50" layoutY="100" text="Student Name:" textFill="WHITE" />
+    <Label fx:id="studentNameLabel" layoutX="150" layoutY="100" style="-fx-font-weight: bold;" textFill="WHITE" />
+
+    <Label layoutX="50" layoutY="130" text="Email:" textFill="WHITE" />
+    <Label fx:id="emailLabel" layoutX="150" layoutY="130" style="-fx-font-weight: bold;" textFill="WHITE" />
+
+    <Label layoutX="50" layoutY="160" text="Phone Number:" textFill="WHITE" />
+    <Label fx:id="phoneNumberLabel" layoutX="150" layoutY="160" style="-fx-font-weight: bold;" textFill="WHITE" />
+
+    <!-- Bảng hiển thị điểm số -->
+    <TableView fx:id="scoreTable" layoutX="100.0" layoutY="200.0" prefHeight="229.0" prefWidth="500">
+        <columns>
+            <!-- Cột mã môn học -->
+            <TableColumn fx:id="subjectIDColumn" prefWidth="247.20001983642578" text="Subject ID" />
+            <!-- Cột điểm -->
+            <TableColumn fx:id="scoreColumn" prefWidth="252.79995727539062" text="Score" />
+        </columns>
+    </TableView>
+
+</AnchorPane>

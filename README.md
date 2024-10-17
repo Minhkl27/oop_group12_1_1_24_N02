@@ -64,5 +64,8 @@ oop_group12_1_1_24_N02
 ## GitHub page của dự án
 https://github.com/Minhkl27/oop_group12_1_1_24_N02/tree/finalReport
 
+## Link video demo dự án
+https://youtu.be/vX96UW1der8
+
 ## Reference
 *Background image is from internet

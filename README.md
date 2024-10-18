@@ -58,7 +58,8 @@ oop_group12_1_1_24_N02
 
 ## Kết nối thành công với CSDL và chèn thêm dữ liệu
 
-![image](https://github.com/user-attachments/assets/215bcfd1-a316-491b-9249-b0610bcbd883)
+![image](https://github.com/user-attachments/assets/5b55b7fa-aaab-4562-b355-0474371f92b3)
+
 
 
 ## GitHub page của dự án
